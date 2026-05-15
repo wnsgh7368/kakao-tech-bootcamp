@@ -15,33 +15,41 @@ import java.util.*;
 
 class Main {
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
         List<String> preys = List.of("고기", "개사료", "소고기", "감자", "고구마", "개 ",
                 "생선", "고양이 사료", "캣닢", "떡", "떡볶이", "갈비", "양갈비", "콩", "부침개", "빵", "모이", "쌀");
-        Scanner sc = new Scanner(System.in);
 
         System.out.println("===== 애완동물 키우기 시뮬레이터에 오신걸 환영합니다! =====");
         System.out.println("===== 여러분이 키우고 싶은 동물 종류를 입력해주세요!(1 또는 2 또는 3) =====");
         System.out.println("===== 1. 강아지 || 2. 고양이 || 3. 새 =====");
 
+        // 동물 선택
         int num = sc.nextInt();
         Animal myPet = selectAnimal(num);
 
-        //시뮬레이션 시작
+        // 시뮬레이션 시작
         boolean next = true;
         while (next){
             System.out.println("\n\n===== 다음으로 취할 행동을 골라주세요 =====");
             System.out.println("===== 1. 내 펫 정보 보기 || 2. 밥 먹이기 || 3. 짖어! =====");
             System.out.println("===== 다른 숫자를 누르면 종료합니다. =====");
-            int jestureNum = sc.nextInt();
+            int gestureNum = sc.nextInt();
 
-            if (jestureNum == 1) {
+            if (gestureNum == 1) {
                 info(myPet);
-            } else if (jestureNum == 2) {
+            } else if (gestureNum == 2) {
                 eat(preys, sc, myPet);
-            } else if (jestureNum == 3) {
+            } else if (gestureNum == 3) {
                 myPet.sound();
             } else  {
                 System.out.println("종료합니다.");
+                next = false;
+            }
+
+            // 내 펫의 몸무게가 0 이하면 종료
+            if (myPet.getWeight() < 0) {
+                System.out.println("===== !!몸무게가 0 이하입니다!! =====");
+                System.out.println("===== 펫이 사망하였습니다. 시뮬레이션을 종료합니다. =====");
                 next = false;
             }
         }
