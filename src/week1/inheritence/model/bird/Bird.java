@@ -1,6 +1,6 @@
-package week1.model.bird;
+package week1.inheritence.model.bird;
 
-import week1.model.Animal;
+import week1.inheritence.model.Animal;
 
 import java.util.List;
 

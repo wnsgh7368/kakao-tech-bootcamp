@@ -1,4 +1,4 @@
-package week1.model.cat;
+package week1.inheritence.model.cat;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package week1.model.bird;
+package week1.inheritence.model.bird;
 
 import java.util.List;
 

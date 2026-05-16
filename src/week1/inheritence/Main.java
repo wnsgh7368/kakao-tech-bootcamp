@@ -1,15 +1,15 @@
-package week1;
+package week1.inheritence;
 
-import week1.model.Animal;
-import week1.model.bird.Bird;
-import week1.model.bird.Eagle;
-import week1.model.bird.Sparrow;
-import week1.model.cat.Cat;
-import week1.model.cat.Persian;
-import week1.model.cat.Siame;
-import week1.model.dog.Chihuahua;
-import week1.model.dog.Dog;
-import week1.model.dog.Retriever;
+import week1.inheritence.model.Animal;
+import week1.inheritence.model.bird.Bird;
+import week1.inheritence.model.bird.Eagle;
+import week1.inheritence.model.bird.Sparrow;
+import week1.inheritence.model.cat.Cat;
+import week1.inheritence.model.cat.Persian;
+import week1.inheritence.model.cat.Siame;
+import week1.inheritence.model.dog.Chihuahua;
+import week1.inheritence.model.dog.Dog;
+import week1.inheritence.model.dog.Retriever;
 
 import java.util.*;
 

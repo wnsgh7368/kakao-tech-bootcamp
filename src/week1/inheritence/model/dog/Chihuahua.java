@@ -1,4 +1,4 @@
-package week1.model.dog;
+package week1.inheritence.model.dog;
 
 import java.util.List;
 
