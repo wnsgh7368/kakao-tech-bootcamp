@@ -1,4 +1,4 @@
-package week1.model;
+package week1.inheritence.model;
 
 public abstract class Animal {
     // 필드 선언
